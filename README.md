@@ -1,1 +1,1 @@
-# MUGB2B_ReplicaSets
+# RTP MUG - Back to Basic: Replica Sets
