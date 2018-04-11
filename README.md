@@ -1,4 +1,4 @@
-# RTP MUG - Back to Basic: Replica Sets
+# Triangle MUG - Back to Basic: Replica Sets
 
 ## Getting everybody on the same page
 * Creating a 3-member Replica Set
