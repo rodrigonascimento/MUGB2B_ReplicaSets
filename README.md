@@ -9,9 +9,15 @@
 
 ## Preparing your lab environment
 * mkdir -p mdb/{3_Node_Arbiter,3_Node,5_Node}
+
 * mlaunch init --replicaset --nodes 2 --arbiter --dir mdb/3_Node_Arbiter
+* mlaunch stop --dir mdb/3_Node_Arbiter
+
 * mlaunch init --replicaset --nodes 3 --dir mdb/3_Node
+* mlaunch stop --dir mdb/3_Node
+
 * mlaunch init --replicaset --nodes 5 --dir mdb/5_Node
+* mlaunch stop --dir mdb/5_Node
 
 ## Playing Time
 Note: This session requires mongoDB and mtools to be installed on your system
