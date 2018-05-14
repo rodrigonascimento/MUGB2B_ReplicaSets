@@ -7,6 +7,12 @@
 * Changing Replica Set settings
 * Connection String
 
+## Preparing your lab environment
+* mkdir -p mdb/{3_Node_Arbiter,3_Node,5_Node}
+* mlaunch init --replicaset --nodes 2 --arbiter --dir mdb/3_Node_Arbiter
+* mlaunch init --replicaset --nodes 3 --dir mdb/3_Node
+* mlaunch init --replicaset --nodes 5 --dir mdb/5_Node
+
 ## Playing Time
 Note: This session requires mongoDB and mtools to be installed on your system
 
@@ -21,22 +27,13 @@ b) 3-member Replica Set - Connection using a connection string
   * What happen to your connection?
 
 c) 3-member Replica Set w/ arbiter and writeConcern: majority
-  * Set up writeConcern to majority
   * Bring the secondary node down
-  * Query a collection
-  * Insert a new document into a collection
-  * What happen to the write operation?
+  * Insert a document into a collection using writeConcern majority
 
 d) 3-member Replica Set w/ writeConcern: majority
-  * Set up writeConcern to majority
   * Bring two secondary nodes down
-  * Query a collection
-  * Insert a new document into a collection
-  * What happen to the write operation?
+  * Insert a document into a collection using writeConcern majority
 
 e) 5-member Replica Set w/ delayed member
-  * Set up writeConcern to majority
   * Bring 2 secondary nodes down (any two but the delayed member)
-  * Query a collection
-  * Insert a new document into a collection
-  * What happen to the write operation?
+  * Insert a document into a collection using writeConcern majority
