@@ -28,6 +28,7 @@ a) 3-member Replica Set - Connection using a single IP/Hostname
   * Connecting to a replica set pointing to the IP/Hostname of the primary member
   * Bring primary node down
   * What happen to your connection?
+  
   ```
   mongo --host localhost:27017
   ```
@@ -36,7 +37,8 @@ b) 3-member Replica Set - Connection using a connection string
   * Connecting to a replica set using a connection string
   * Bring primary node down
   * What happen to your connection?
-  ```
+  
+  ```
   mongo --host replset/localhost:27017,localhost:27018,localhost:27019
   ```
 
