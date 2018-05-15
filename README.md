@@ -38,10 +38,10 @@ b) 3-member Replica Set - Connection using a connection string
   * Bring primary node down
   * What happen to your connection?
   
-  ```
+  ```
   mongo --host replset/localhost:27017,localhost:27018,localhost:27019
   ```
-
+  
 c) 3-member Replica Set w/ arbiter and writeConcern: majority
   * Bring the secondary node down
   * Insert a document into a collection using writeConcern majority
